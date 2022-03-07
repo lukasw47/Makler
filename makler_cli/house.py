@@ -1,5 +1,5 @@
-from makler.cli_input.number import input_integer
-from makler.cli_input.room import input_room
+from makler_cli.number import input_integer
+from makler_cli.room import input_room
 from makler.house import House
 
 
