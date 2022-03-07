@@ -2,8 +2,8 @@ from typing import Sequence
 
 from makler.room import Room
 from makler.shapes import Rectangle
-from makler_cli.mesurements import input_length_in_meters
-from makler_cli.number import input_integer
+from makler_cli.inputs.mesurements import input_length_in_meters
+from makler_cli.inputs.number import input_integer
 
 
 def input_room_out_of_rectangles() -> Room:

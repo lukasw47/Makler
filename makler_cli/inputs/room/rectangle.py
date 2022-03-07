@@ -1,6 +1,6 @@
 from makler.room import Room
 from makler.shapes import Rectangle
-from makler_cli.mesurements import input_length_in_meters
+from makler_cli.inputs.mesurements import input_length_in_meters
 
 
 def input_rectangle_room() -> Room:

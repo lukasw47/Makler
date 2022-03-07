@@ -1,10 +1,10 @@
 from typing import Sequence
 
 from makler.room import Room
-from makler_cli.question import yes_no_question
-from makler_cli.room.complex import input_complex_room
-from makler_cli.room.parts import input_room_out_of_rectangles
-from makler_cli.room.rectangle import input_rectangle_room
+from makler_cli.inputs.question import yes_no_question
+from makler_cli.inputs.room.complex import input_complex_room
+from makler_cli.inputs.room.parts import input_room_out_of_rectangles
+from makler_cli.inputs.room.rectangle import input_rectangle_room
 
 
 def input_multiple_rooms(count: int) -> Sequence[Room]:

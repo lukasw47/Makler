@@ -1,4 +1,4 @@
-from makler_cli.house import input_house
+from makler_cli.inputs.house import input_house
 
 
 def run_cli() -> None:
