@@ -17,4 +17,3 @@ def measure_house() -> None:
     print()
     print(f'house area: {house.get_area()}')
     print()
-    print()
