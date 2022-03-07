@@ -14,8 +14,9 @@ class Shape(ABC):
 
 @dataclass(frozen=True)
 class Rectangle(Shape):
-    length: LengthInMeters
     width: LengthInMeters
+    length: LengthInMeters
 
     def get_area(self) -> AreaInSquareMeters:
-        return self.length * self.width
+        area = self.length * self.width
+        return AreaInSquareMeters(area)
