@@ -1,6 +1,6 @@
 from makler.room import Room
 
 
-def input_room() -> Room:
-    room_parts = tuple()
+def input_complex_room() -> Room:
+    room_parts = ()
     return Room(parts=room_parts)
