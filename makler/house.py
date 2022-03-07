@@ -11,4 +11,5 @@ class House:
 
     def get_area(self) -> AreaInSquareMeters:
         room_areas = map(Room.get_area, self.rooms)
-        return sum(room_areas)
+        area = sum(room_areas)
+        return AreaInSquareMeters(area)

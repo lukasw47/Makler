@@ -8,4 +8,4 @@ class LengthInMeters(Decimal):
 class AreaInSquareMeters(Decimal):
 
     def __str__(self) -> str:
-        return f'{super()}m²'
+        return f'{super().__str__()}m²'

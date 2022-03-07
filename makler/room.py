@@ -11,4 +11,5 @@ class Room:
 
     def get_area(self) -> AreaInSquareMeters:
         part_areas = map(Shape.get_area, self.parts)
-        return sum(part_areas)
+        area = sum(part_areas)
+        return AreaInSquareMeters(area)
