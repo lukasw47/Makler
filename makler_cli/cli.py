@@ -1,4 +1,6 @@
 from makler_cli.inputs.house import input_house
+from makler_cli.inputs.question import yes_no_question
+from makler_cli.prints import print_house
 
 
 def run_cli() -> None:
@@ -11,9 +13,8 @@ def run_cli() -> None:
 
 
 def measure_house() -> None:
-    print()
     house = input_house()
-
-    print()
-    print(f'house area: {house.get_area()}')
+    print_house(house)
+    if yes_no_question(message='do you want to quit [y/n]? '):
+        raise KeyboardInterrupt
     print()

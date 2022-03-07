@@ -9,6 +9,7 @@ def input_rectangle_room() -> Room:
 
 
 def input_rectangle_room_part() -> Rectangle:
-    rectangle_width = input_length_in_meters(message='input room width: ')
-    rectangle_length = input_length_in_meters(message='input room length: ')
+    rectangle_width = input_length_in_meters(message='room width: ')
+    rectangle_length = input_length_in_meters(message='room length: ')
+    print()
     return Rectangle(width=rectangle_width, length=rectangle_length)
