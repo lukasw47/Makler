@@ -9,7 +9,7 @@ class Shape(ABC):
 
     @abstractmethod
     def get_area(self) -> AreaInSquareMeters:
-        pass
+        return self.get_area()
 
 
 @dataclass(frozen=True)
