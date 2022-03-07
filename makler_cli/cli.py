@@ -11,7 +11,6 @@ def run_cli() -> None:
 
 
 def measure_house() -> None:
-    print('### MEASURE HOUSE '.ljust(50, '#'))
     print()
     house = input_house()
 

@@ -17,6 +17,7 @@ def input_multiple_rectangle_room_parts(count: int) -> Sequence[Rectangle]:
 
 
 def input_rectangle_room_part() -> Rectangle:
+    print('input room part:')
     rectangle_width = input_length_in_meters(message='input width of room part: ')
     rectangle_length = input_length_in_meters(message='input length of room part: ')
     return Rectangle(width=rectangle_width, length=rectangle_length)

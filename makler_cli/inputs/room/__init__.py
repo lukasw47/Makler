@@ -12,7 +12,7 @@ def input_multiple_rooms(count: int) -> Sequence[Room]:
 
 
 def input_room() -> Room:
-    print('### INPUT ROOM '.ljust(50, '#'))
+    print('input room:')
     if yes_no_question(message='is the room a rectangle? '):
         return input_rectangle_room()
 
