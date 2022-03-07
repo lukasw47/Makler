@@ -10,7 +10,7 @@ def input_integer(message: str) -> int:
 def input_decimal(message: str) -> Decimal:
     while not (decimal_value := input(message)) or not is_decimal_number(decimal_value):
         print('please input a number!')
-    return Decimal(decimal_value)
+    return Decimal(decimal_value.replace(',', '.', 1))
 
 
 def is_decimal_number(string: str) -> bool:
