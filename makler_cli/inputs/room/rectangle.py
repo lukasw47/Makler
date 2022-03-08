@@ -4,7 +4,7 @@ from makler_cli.inputs.mesurements import input_length_in_meters
 
 
 def input_rectangle_room() -> Room:
-    room_parts = input_rectangle_room_part(),
+    room_parts = (input_rectangle_room_part(),)
     return Room(parts=room_parts)
 
 
