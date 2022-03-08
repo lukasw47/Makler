@@ -8,14 +8,14 @@ def input_integer(message: str) -> int:
 
 
 def input_decimal(message: str) -> Decimal:
-    while not (decimal_value_text := input(message)) or not is_decimal_number(decimal_value_text):
+    while not (decimal_text := input(message)) or not is_decimal_number(decimal_text):
         print('please input a number!')
-    decimal_value = format_decimal_text(decimal_value_text)
+    decimal_value = format_decimal_text(decimal_text)
     return Decimal(decimal_value)
 
 
-def is_decimal_number(string: str) -> bool:
-    decimal_value = format_decimal_text(string)
+def is_decimal_number(decimal_text: str) -> bool:
+    decimal_value = format_decimal_text(decimal_text)
     number_parts = decimal_value.split(sep='.', maxsplit=1)
     return all(map(str.isdecimal, number_parts))
 
