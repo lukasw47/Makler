@@ -15,6 +15,6 @@ def run_cli() -> None:
 def measure_house() -> None:
     house = input_house()
     print_house(house)
-    if yes_no_question(message='do you want to quit [y/n]? '):
+    if yes_no_question(message='do you want to input another house [y/n]? '):
         raise KeyboardInterrupt
     print()
