@@ -25,13 +25,17 @@ def headline(title: str, length: int) -> None:
 
 def print_house(house: House) -> None:
     headline1('house')
-    print(f'House Area: {str(house.get_area()):6}')
-    print()
+    print_house_area(house)
+
+
+def print_house_area(house: House) -> None:
     for index, room in enumerate(house.rooms):
         print_room(index, room)
+    print('-' * 18)
+    print(f'House Area: {str(house.get_area()):>6}')
     print()
 
 
 def print_room(index: int, room: Room) -> None:
     string_index = f'{to_human_readable_index(index)}:'
-    print(f'Room {string_index:<6} {str(room.get_area()):6}')
+    print(f'Room {string_index:<6} {str(room.get_area()):>6}')
