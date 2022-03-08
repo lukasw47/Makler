@@ -1,4 +1,4 @@
-def yes_no_question(message: str) -> bool:
+def ask_yes_no(message: str) -> bool:
     while True:
         boolean_input = input(message)
 

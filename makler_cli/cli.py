@@ -1,5 +1,5 @@
 from makler_cli.inputs.house import input_house
-from makler_cli.inputs.question import yes_no_question
+from makler_cli.inputs.question import ask_yes_no
 from makler_cli.prints import print_house
 
 
@@ -19,6 +19,6 @@ def measure_house() -> None:
 
 
 def ask_to_repeat() -> None:
-    if yes_no_question(message='do you want to input another house [y/n]? '):
+    if ask_yes_no(message='do you want to input another house [y/n]? '):
         raise KeyboardInterrupt
     print()
