@@ -2,6 +2,7 @@ from typing import Sequence
 
 from makler.room import Room
 from makler.shapes import Rectangle
+from makler_cli.index import to_human_readable_index
 from makler_cli.inputs.mesurements import input_length_in_meters
 from makler_cli.inputs.number import input_integer
 from makler_cli.prints import headline4
@@ -15,11 +16,11 @@ def input_room_out_of_rectangles() -> Room:
 
 
 def input_multiple_rectangle_room_parts(count: int) -> Sequence[Rectangle]:
-    return tuple(map(input_rectangle_room_part, range(1, count + 1)))
+    return tuple(map(input_rectangle_room_part, range(count)))
 
 
 def input_rectangle_room_part(index: int) -> Rectangle:
-    headline4(title=f'room part {index}')
+    headline4(title=f'room part {to_human_readable_index(index)}')
     rectangle_width = input_length_in_meters(message='width of room part: ')
     rectangle_length = input_length_in_meters(message='length of room part: ')
     print()
