@@ -2,14 +2,14 @@ from dataclasses import dataclass
 from typing import Sequence
 
 from makler.measurements import AreaInSquareMeters
-from makler.shapes import Shape
+from makler.shapes import Part
 
 
 @dataclass(frozen=True)
 class Room:
-    parts: Sequence[Shape]
+    parts: Sequence[Part]
 
     def get_area(self) -> AreaInSquareMeters:
-        part_areas = map(Shape.get_area, self.parts)
+        part_areas = map(Part.get_area, self.parts)
         area = sum(part_areas)
         return AreaInSquareMeters(area)

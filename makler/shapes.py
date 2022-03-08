@@ -5,7 +5,7 @@ from makler.measurements import AreaInSquareMeters, LengthInMeters
 
 
 @dataclass(frozen=True)
-class Shape(ABC):
+class Part(ABC):
 
     @abstractmethod
     def get_area(self) -> AreaInSquareMeters:
@@ -13,7 +13,7 @@ class Shape(ABC):
 
 
 @dataclass(frozen=True)
-class Rectangle(Shape):
+class Rectangle(Part):
     width: LengthInMeters
     length: LengthInMeters
 
