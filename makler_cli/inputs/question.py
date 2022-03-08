@@ -4,7 +4,6 @@ def yes_no_question(message: str) -> bool:
 
         if boolean_input in ('y', 'yes'):
             return True
-
         elif boolean_input in ('n', 'no'):
             return False
 
