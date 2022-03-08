@@ -19,6 +19,6 @@ def measure_house() -> None:
 
 
 def ask_to_repeat() -> None:
-    if ask_yes_no(message='do you want to input another house [y/n]? '):
+    if not ask_yes_no(message='do you want to input another house [y/n]? '):
         raise KeyboardInterrupt
     print()
