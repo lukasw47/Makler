@@ -25,6 +25,7 @@ def headline(title: str, length: int) -> None:
 
 def print_house(house: House) -> None:
     headline1('house')
+    print()
     print_house_area(house)
 
 
