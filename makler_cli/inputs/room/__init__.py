@@ -4,7 +4,7 @@ from makler.room import Room
 from makler_cli.index import to_human_readable_index
 from makler_cli.inputs.question import yes_no_question
 from makler_cli.inputs.room.complex import input_complex_room
-from makler_cli.inputs.room.parts import input_room_out_of_rectangles
+from makler_cli.inputs.room.rectangle_parts import input_room_with_rectangle_parts
 from makler_cli.inputs.room.rectangle import input_rectangle_room
 from makler_cli.prints import headline3, headline2
 
@@ -24,6 +24,6 @@ def input_room(index: int) -> Room:
 
     elif yes_no_question(message='can the room easily be split into rectangles [y/n]? '):
         print()
-        return input_room_out_of_rectangles()
+        return input_room_with_rectangle_parts()
 
     return input_complex_room()
