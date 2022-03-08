@@ -1,7 +1,7 @@
 from typing import Sequence
 
 from makler.room import Room
-from makler.shapes import Rectangle
+from makler.parts import Rectangle
 from makler_cli.index import to_human_readable_index
 from makler_cli.inputs.mesurements import input_length_in_meters
 from makler_cli.inputs.number import input_integer

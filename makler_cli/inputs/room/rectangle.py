@@ -1,5 +1,5 @@
 from makler.room import Room
-from makler.shapes import Rectangle
+from makler.parts import Rectangle
 from makler_cli.inputs.mesurements import input_length_in_meters
 
 

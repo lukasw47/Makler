@@ -2,7 +2,7 @@ from dataclasses import dataclass
 from typing import Sequence
 
 from makler.measurements import AreaInSquareMeters
-from makler.shapes import Part
+from makler.parts import Part
 
 
 @dataclass(frozen=True)
