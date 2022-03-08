@@ -8,11 +8,17 @@ def input_integer(message: str) -> int:
 
 
 def input_decimal(message: str) -> Decimal:
-    while not (decimal_value := input(message)) or not is_decimal_number(decimal_value):
+    while not (decimal_value_text := input(message)) or not is_decimal_number(decimal_value_text):
         print('please input a number!')
-    return Decimal(decimal_value.replace(',', '.', 1))
+    decimal_value = format_decimal_text(decimal_value_text)
+    return Decimal(decimal_value)
 
 
 def is_decimal_number(string: str) -> bool:
-    number_parts = string.replace(',', '.', 1).split(sep='.', maxsplit=1)
+    decimal_value = format_decimal_text(string)
+    number_parts = decimal_value.split(sep='.', maxsplit=1)
     return all(map(str.isdecimal, number_parts))
+
+
+def format_decimal_text(value: str) -> str:
+    return value.replace(',', '.', 1)
