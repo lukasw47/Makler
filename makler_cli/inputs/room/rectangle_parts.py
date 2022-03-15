@@ -14,7 +14,7 @@ def input_room_with_rectangle_parts() -> Room:
 
 
 def input_rectangle_parts() -> Sequence[Rectangle]:
-    part_count = input_integer('how many rectangle can the room be split into? ')
+    part_count = input_integer('how many rectangles can the room be split into? ')
     print()
     rectangle_parts = map(input_rectangle_part, range(part_count))
     return tuple(rectangle_parts)
