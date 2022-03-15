@@ -22,7 +22,7 @@ def input_room(index: int) -> Room:
         print()
         return input_rectangle_room()
 
-    elif ask_yes_no(message='can the room easily be split into rectangles [y/n]? '):
+    elif True or ask_yes_no(message='can the room easily be split into rectangles [y/n]? '):
         print()
         return input_room_with_rectangle_parts()
 
