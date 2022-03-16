@@ -11,5 +11,4 @@ class AreaInSquareMeters(Decimal):
         return format(str(self), format_spec)
 
     def __str__(self) -> str:
-        print('why')
         return f'{super().__str__()}m²'
