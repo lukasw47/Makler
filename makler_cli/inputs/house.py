@@ -4,7 +4,7 @@ from makler.house import House
 from makler.room import Room
 from makler_cli.inputs.number import input_integer
 from makler_cli.inputs.room import input_multiple_rooms
-from makler_cli.prints import headline1, headline2
+from makler_cli.prints.headline import headline1
 
 
 def input_house() -> House:

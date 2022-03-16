@@ -5,7 +5,7 @@ from makler.parts import Rectangle
 from makler_cli.index import to_human_readable_index
 from makler_cli.inputs.mesurements import input_length_in_meters
 from makler_cli.inputs.number import input_integer
-from makler_cli.prints import headline4
+from makler_cli.prints.headline import headline4
 
 
 def input_room_with_rectangle_parts() -> Room:

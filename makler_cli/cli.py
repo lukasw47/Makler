@@ -1,6 +1,6 @@
 from makler_cli.inputs.house import input_house
 from makler_cli.inputs.question import ask_yes_no
-from makler_cli.prints import print_house
+from makler_cli.prints.house import print_house
 
 
 def run_cli() -> None:
