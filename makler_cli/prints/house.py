@@ -1,8 +1,8 @@
 from makler.house import House
-from makler.room import Room
-from makler_cli.index import to_human_readable_index
 from makler_cli.prints.headline import headline1
 from makler_cli.prints.room import print_room_area
+from makler_cli.prints.separator import print_separator
+from makler_cli.prints.value import print_named_value
 
 
 def print_house(house: House) -> None:
@@ -14,6 +14,6 @@ def print_house(house: House) -> None:
 def print_house_area(house: House) -> None:
     for index, room in enumerate(house.rooms):
         print_room_area(index, room)
-    print('-' * 18)
-    print(f'House Area: {str(house.get_area()):>6}')
+    print_separator()
+    print_named_value(name='House Area', value=house.get_area())
     print()
